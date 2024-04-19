@@ -7,7 +7,7 @@ This API allows you to create and read text files in a specific directory.
 http://localhost:3000
 
 ### Render URL:
-https://nodejsfilesystem-mf8c.onrender.com/
+https://nodejsfilesystem-mf8c.onrender.com/readfile
 ### End Points:
 - createfile
 - readfile
