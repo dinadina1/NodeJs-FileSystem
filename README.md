@@ -35,7 +35,8 @@ None
 
 ```json
 {
-  "message": "File Created Successfully"
+    "message": "File Created Successfully",
+    "fileName": "19-3-2024_0-16-14PM.txt"
 }
 ```
 
@@ -68,7 +69,11 @@ None
 **Response (Success):**
 ```json
 {
-  "files": ["file1.txt", "file2.txt", ...]
+    "files": [
+        "19-3-2024_4-47-42PM.txt",
+        "19-3-2024_4-55-14PM.txt",
+        "19-3-2024_4-57-35PM.txt"
+    ]
 }
 ```
 
