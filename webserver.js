@@ -29,19 +29,18 @@ app.get("/createfile", (req, res) => {
       return res.status(404).json({ message: "Error Occured" });
     } else {
       console.log(`File ${fileName} Created Successfully`);
-      res.status(200).json({ message: "File Created Successfully" });
+      res.status(200).json({
+        message: "File Created Successfully",
+        fileName: fileName,
+      });
     }
   });
 });
 
-
-
 // API to read all files in the "files" directory
 app.get("/readfile", (req, res) => {
-
   // Read files in the "files" directory
-  fs.readdir(path.join(__dirname, "files"), (err, files=[]) => {
-
+  fs.readdir(path.join(__dirname, "files"), (err, files = []) => {
     // Check for errors
     if (err) {
       console.log(err);
